@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>
+    Global Croplands
+  </title>
+  <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+  </script>
+
+  <script>
+    $(function(){
+      $("#header").load("templates/header.html");
+      $("#footer").load("templates/footer.html");
+    });
+  </script>
+</head>
+
+<body>
+  <div id="header"></div>
+  <!--Begin Body-->
+  <div id="maincontent">
+    <embed src="https://croplandsdev.users.earthengine.app/view/croplands" style="height:100%;width:100%;">
+  </div>
+  <!--End Body-->
+  <div id="footer"></div>
+</body>
+
+</html>
